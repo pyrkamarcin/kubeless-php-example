@@ -1,0 +1,16 @@
+service: hello-project
+
+provider:
+  name: kubeless
+  runtime: php7.2
+
+plugins:
+- serverless-kubeless
+
+functions:
+  hello:
+    handler: hello.foo
+    events:
+    - http:
+        path: hello
+        method: get
