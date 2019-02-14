@@ -26,7 +26,7 @@ functions.kubeless.io         1h
 httptriggers.kubeless.io      1h
 ```
 
-Aby uzyskać komendę kubeless, na Linux lub macOs należy użyć następującego kodu:
+Aby uzyskać komendę kubeless, na Linux lub MacOSX należy użyć następującego kodu:
 
 ```
 $ export OS=$(uname -s| tr '[:upper:]' '[:lower:]')
@@ -46,7 +46,7 @@ $ kubeless function deploy hello --runtime php7.2 --handler hello.foo --from-fil
 
 ## Wywołanie
 
-Aby pretestować działanie funkcji możesz użyć następującej komedny:
+Aby przetestować działanie funkcji możesz użyć następującej komedny:
 
 ```bash
 $ kubeless function call hello --data 'hello world!'
